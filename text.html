@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 100vh;
+      background-color: #111;
+    }
+
+    .animated-text {
+      font-size: 60px;
+      font-style: italic;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff004c, #ffdd00, #0066ff, #ff0055);
+      color: transparent;
+      background-size: 300% 300%;
+      background-clip: text;
+      animation: gradientMove 3s ease-in-out infinite;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+  <body>
+    <span class="animated-text">RAJESH PATIL</span>
+  </body>
+</html>

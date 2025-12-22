@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        height: 100vh;
+      }
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+      }
+      @media (min-width: 600px) and (max-width: 900px) {
+        .circle {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">CIRCLE</div>
+  </body>
+</html>

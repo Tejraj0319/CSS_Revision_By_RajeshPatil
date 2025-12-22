@@ -1,0 +1,122 @@
+<!-- syntex -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    //defies the character encoding for the HTML document
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    //to make the website responsive
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      //used to group or organize other HTML elements together.
+      <h1>Hello, World!</h1>
+    </div>
+  </body>
+</html>
+
+<!-------------------------------------------- ordered list ------------------------------------------>
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+
+<!-------------------------------------------- un-ordered list ----------------------------------------->
+<ul>
+  <li>
+    Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </ul>
+  </li>
+  <li>flowers</li>
+  <li>Vegetables</li>
+</ul>
+
+<!--------------------------------------- Multipart/Form Data ------------------------------------------>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <input type="text" name="" id="" />
+  <input type="text" name="" id="" />
+  <input type="text" name="" id="" />
+</form>
+
+<!---------------------------------------------- sub sup ---------------------------------------------->
+<p>My Name Is <sup>Rajesh</sup>, from satara!</p>
+<p>My Name Is <sub>Rajesh</sub>, from satara!</p>
+
+<!--------------------------------------------- Image tag ------------------------------------------->
+<a href="">
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLat8bZvhXD3ChSXyzGsFVh6qgplm1KhYPKA&s"
+    alt=""
+  />
+</a>
+
+<!------------------------------------------ Figure tag ----------------------------------------------------->
+<figure>
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLat8bZvhXD3ChSXyzGsFVh6qgplm1KhYPKA&s"
+    alt=""
+  />
+  <video
+    src="https://www.pexels.com/download/video/34393391/"
+    controls
+    width="400"
+  ></video>
+  <figcaption>Figure tag is use to group media content</figcaption>
+</figure>
+
+<!----------------------------- iframe(used to show other webpage inside current webp --------------------->
+<iframe
+  src="https://www.pexels.com/"
+  width="800"
+  height="600"
+  style="border: 2px solid black"
+  title="Example Website"
+></iframe>
+
+<!---------------------------------------- colspan and row span ------------------------------------------->
+<table border="1">
+  <thead>
+    <tr>
+      <!-- it will take space of two columns -->
+      <th colspan="2">Name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Profession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!-- it will take space of two rows -->
+      <td rowspan="2">Rajesh</td>
+      <td>Patil</td>
+      <td>24</td>
+      <td>Pune</td>
+      <td>Developer</td>
+    </tr>
+    <tr>
+      <td>Patil</td>
+      <td>25</td>
+      <td>Mumbai</td>
+      <td>Designer</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-------------------------------------------- Event handling ------------------------------------------->
+<!-- method 1(inline events) -->
+<button onclick="alert('Button clicked!')">Click Me</button>
+
+<!-- method 2 (using DOM)-->
+<button id="btn">Click Me</button>
+<script>
+  document.getElementById("btn").onclick = function () {
+    alert("Button clicked using DOM property!");
+  };
+</script>

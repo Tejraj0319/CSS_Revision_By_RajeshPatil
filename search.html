@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Placeholder</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .input-box {
+      position: relative;
+      width: 250px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid #0059ff;
+      border-radius: 10px;
+      outline: none;
+      background: transparent;
+    }
+
+    .input-box label {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #ffffff; /* same as page background */
+      padding: 0 5px;
+      font-size: 16px;
+      color: #666;
+      pointer-events: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    /* Move label onto border */
+    .input-box input:focus + label,
+    .input-box input:not(:placeholder-shown) + label{
+      top: 0; /* exactly on border */
+      font-size: 10px;
+      color: #0059ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-box">
+    <input type="text" placeholder=" " required>
+    <label>Enter Name</label>
+  </div>
+</body>
+</html>
